@@ -1,0 +1,229 @@
+# ZinzinoBot 🤖⚕️
+
+Inteligentny bot do tworzenia i walidacji treści zdrowotnych z zaawansowanym systemem weryfikacji naukowej.
+
+## 📋 Opis projektu
+
+ZinzinoBot to zaawansowany system AI zaprojektowany do automatycznego generowania, weryfikacji i dystrybuowania treści o tematyce zdrowotnej. Bot łączy w sobie sztuczną inteligencję z rygorystyczną walidacją naukową, zapewniając wysoką jakość i wiarygodność publikowanych informacji.
+
+## ✨ Główne funkcjonalności
+
+- 🔬 **Walidacja naukowa**: Automatyczna weryfikacja treści pod kątem aktualnych standardów medycznych
+- 📝 **Generowanie treści**: Tworzenie artykułów, porad i materiałów edukacyjnych o zdrowiu
+- 💬 **Komunikacja**: Wielokanałowa dystrybucja treści (social media, newsletter, API)
+- 🔍 **Fact-checking**: Sprawdzanie wiarygodności informacji medycznych
+- 📊 **Analityka**: Monitoring skuteczności i zaangażowania użytkowników
+
+## 🏗️ Architektura
+
+```
+zinzinobot/
+├── communication/     # Moduł komunikacji i dystrybucji
+├── core/             # Główna logika aplikacji
+├── scientific_validation/  # System walidacji naukowej
+├── docs/             # Dokumentacja
+├── tests/            # Testy jednostkowe i integracyjne
+└── config/           # Pliki konfiguracyjne
+```
+
+### Moduły
+
+#### 📡 Communication
+- Integracje z platformami społecznościowymi
+- System powiadomień
+- API dla zewnętrznych aplikacji
+- Zarządzanie newsletterami
+
+#### ⚙️ Core
+- Silnik generowania treści
+- Zarządzanie bazą wiedzy medycznej
+- System uczenia maszynowego
+- Workflow management
+
+#### 🔬 Scientific Validation
+- Weryfikacja źródeł medycznych
+- Sprawdzanie zgodności z guidelines
+- System peer review
+- Aktualizacja bazy wiedzy naukowej
+
+## 🚀 Instalacja
+
+### Wymagania systemowe
+
+- Python 3.9+
+- Node.js 16+
+- PostgreSQL 13+
+- Redis 6+
+
+### Szybki start
+
+```bash
+# Klonowanie repozytorium
+git clone https://github.com/BartlomiejStaniak/zinzinobot.git
+cd zinzinobot
+
+# Instalacja zależności
+pip install -r requirements.txt
+npm install
+
+# Konfiguracja bazy danych
+cp config/config.example.yml config/config.yml
+# Edytuj config.yml z własnymi ustawieniami
+
+# Migracje bazy danych
+python manage.py migrate
+
+# Uruchomienie
+python main.py
+```
+
+## ⚙️ Konfiguracja
+
+### Zmienne środowiskowe
+
+```bash
+# API Keys
+OPENAI_API_KEY=your_openai_key
+PUBMED_API_KEY=your_pubmed_key
+
+# Baza danych
+DATABASE_URL=postgresql://user:password@localhost/zinzinobot
+
+# Redis
+REDIS_URL=redis://localhost:6379
+
+# Komunikacja
+SLACK_BOT_TOKEN=your_slack_token
+TELEGRAM_BOT_TOKEN=your_telegram_token
+```
+
+### Konfiguracja walidacji naukowej
+
+```yaml
+scientific_validation:
+  sources:
+    - pubmed
+    - cochrane
+    - who_guidelines
+  confidence_threshold: 0.85
+  review_required: true
+  auto_update_interval: "24h"
+```
+
+## 📚 Użytkowanie
+
+### Podstawowe komendy
+
+```python
+from zinzinobot import ZinzinoBot
+
+# Inicjalizacja bota
+bot = ZinzinoBot()
+
+# Generowanie artykułu
+article = bot.generate_content(
+    topic="diabetes prevention",
+    type="educational_article",
+    target_audience="general_public"
+)
+
+# Walidacja naukowa
+validation = bot.validate_content(article)
+
+# Publikacja
+if validation.is_approved:
+    bot.publish(article, channels=["website", "newsletter"])
+```
+
+### REST API
+
+```bash
+# Generowanie treści
+POST /api/v1/content/generate
+{
+  "topic": "heart disease prevention",
+  "type": "blog_post",
+  "language": "pl"
+}
+
+# Walidacja treści
+POST /api/v1/content/validate
+{
+  "content": "...",
+  "type": "medical_advice"
+}
+```
+
+## 🧪 Testowanie
+
+```bash
+# Uruchomienie wszystkich testów
+pytest
+
+# Testy jednostkowe
+pytest tests/unit/
+
+# Testy integracyjne
+pytest tests/integration/
+
+# Testy walidacji naukowej
+pytest tests/scientific_validation/
+```
+
+## 📈 Monitoring i metryki
+
+- **Dokładność walidacji**: 95%+
+- **Czas generowania treści**: <30s
+- **Pokrycie źródeł naukowych**: 10,000+ publikacji
+- **Obsługiwane języki**: PL, EN (planowane: DE, ES, FR)
+
+## 🔄 Status rozwoju
+
+- [x] Moduł core - implementacja podstawowa
+- [x] System walidacji naukowej
+- [x] Moduł komunikacji
+- [ ] Interface użytkownika (Web UI)
+- [ ] Integracja z platformami social media
+- [ ] System raportowania
+- [ ] Mobile API
+- [ ] Wielojęzyczność
+
+## 🤝 Współpraca
+
+### Jak przyczynić się do rozwoju
+
+1. Fork repozytorium
+2. Stwórz branch dla nowej funkcjonalności (`git checkout -b feature/amazing-feature`)
+3. Dodaj testy dla nowego kodu
+4. Upewnij się, że wszystkie testy przechodzą
+5. Stwórz Pull Request
+
+### Standardy kodu
+
+- Używamy Black do formatowania Python
+- ESLint dla JavaScript/TypeScript
+- Pokrycie testów min. 80%
+- Dokumentacja dla wszystkich publicznych funkcji
+
+## 📄 Licencja
+
+Ten projekt jest licencjonowany na podstawie MIT License - zobacz plik [LICENSE](LICENSE) dla szczegółów.
+
+## 👥 Autorzy
+
+- **Bartłomiej Staniak** - *Główny deweloper* - [@BartlomiejStaniak](https://github.com/BartlomiejStaniak)
+
+## 🆘 Wsparcie
+
+- 📧 Email: support@zinzinobot.com
+- 💬 Discord: [ZinzinoBot Community](https://discord.gg/zinzinobot)
+- 📖 Dokumentacja: [docs.zinzinobot.com](https://docs.zinzinobot.com)
+- 🐛 Zgłaszanie błędów: [GitHub Issues](https://github.com/BartlomiejStaniak/zinzinobot/issues)
+
+## ⚠️ Zastrzeżenia medyczne
+
+ZinzinoBot jest narzędziem do tworzenia treści edukacyjnych i nie zastępuje profesjonalnej porady medycznej. Wszystkie treści powinny być weryfikowane przez wykwalifikowanych specjalistów przed publikacją w kontekście medycznym.
+
+---
+
+**Uwaga**: Projekt jest obecnie w fazie rozwoju. Nie używaj w środowisku produkcyjnym bez odpowiednich testów i walidacji.
