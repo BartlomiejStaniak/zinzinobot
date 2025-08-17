@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """
 material_processor.py - Główny procesor materiałów uczących
 Plik: learning_engine/material_processor.py

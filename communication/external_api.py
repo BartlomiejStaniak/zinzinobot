@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """
 external_api.py - API dla zewnętrznych integracji
 Plik: communication/external_api.py

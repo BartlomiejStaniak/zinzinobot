@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """
 fact_checker.py - Sprawdzanie faktów medycznych
 Plik: scientific_validation/fact_checker.py

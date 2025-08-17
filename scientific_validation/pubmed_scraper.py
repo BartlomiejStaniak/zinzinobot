@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """
 pubmed_scraper.py - Scraper dla PubMed/badań naukowych
 Plik: scientific_validation/pubmed_scraper.py

@@ -1057,4 +1057,4 @@ async def test_adaptive_learning():
 
 
 if __name__ == "__main__":
-    asyncio.run(test_adaptive_learning())  # !/usr/bin/env python3
+    asyncio.run(test_adaptive_learning())  # !/usr/bin/.env python3

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """
 credibility_scorer.py - Ocena wiarygodności źródeł medycznych
 Plik: scientific_validation/credibility_scorer.py

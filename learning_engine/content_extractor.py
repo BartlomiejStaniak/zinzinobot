@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """
 content_extractor.py - Wyciąganie treści z różnych formatów plików
 Plik: learning_engine/content_extractor.py

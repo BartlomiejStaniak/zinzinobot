@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """
 agent_messenger.py - System komunikacji między agentami
 Plik: communication/agent_messenger.py

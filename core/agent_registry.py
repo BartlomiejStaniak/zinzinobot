@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """
 agent_registry.py - Rejestr agentów i system discovery
 Plik: core/agent_registry.py

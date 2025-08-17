@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """
 scientific_validator.py - Główny walidator naukowy
 Plik: core/scientific_validator.py

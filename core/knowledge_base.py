@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """
 knowledge_base.py - Centralna baza wiedzy systemu
 Plik: core/knowledge_base.py

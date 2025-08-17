@@ -12,3 +12,11 @@ założenia techniczne
 - monetyzacja = dzialmy w oparciu o pozyskanie klientow ktore podepniemy do progrmau zinizno, oraz za reklamy w zaleznosci od sukcesu kanalu spolecznosciowego
 - source-free = do uruchomienia aplikacji nie sa potrzebne zadne srodki finanoswe
 - edukacja = materialyzebrane ze statystyk maja posluzyc w przyszlosci do rozwoju programow opartych na sztucznej inteligencji
+
+https://github.com/BartlomiejStaniak/zinzinobot/commit/41daf84438fa13564c20a0d7be48cfcd2c3583f3
+https://github.com/BartlomiejStaniak/zinzinobot/commit/e1bbe475f44844cedd529822df9cb741f76b6d01
+https://github.com/BartlomiejStaniak/zinzinobot
+
+wszystkie pliki
+Get-ChildItem -Recurse -Include *.py,*.txt,*.yaml,*.yml,*.md | Select-Object -First 30 FullName
+

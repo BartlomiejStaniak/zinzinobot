@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """
 research_database.py - Baza danych badań naukowych
 Plik: scientific_validation/research_database.py

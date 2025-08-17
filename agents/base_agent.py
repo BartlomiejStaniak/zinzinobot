@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """
 base_agent.py - Bazowa klasa dla wszystkich agentów
 Plik: agents/base_agent.py

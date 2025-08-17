@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """
 protocol_handler.py - Obsługa protokołów komunikacji między agentami
 Plik: communication/protocol_handler.py

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/.env python3
 """
 knowledge_updater.py - Aktualizacja bazy wiedzy na podstawie performance
 Plik: learning_engine/knowledge_updater.py
