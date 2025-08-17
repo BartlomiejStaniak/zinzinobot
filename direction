@@ -1,0 +1,14 @@
+- 🔬 **Walidacja naukowa**: Automatyczna weryfikacja treści pod kątem aktualnych standardów medycznych
+- 📝 **Generowanie treści**: Tworzenie artykułów, porad i materiałów edukacyjnych o zdrowiu
+- 💬 **Komunikacja**: Wielokanałowa dystrybucja treści (social media, newsletter, API)
+- 🔍 **Fact-checking**: Sprawdzanie wiarygodności informacji medycznych
+- 📊 **Analityka**: Monitoring skuteczności i zaangażowania użytkowników
+
+
+założenia techniczne
+- automatyzacja = rojekt ma za zadanie generowac tresci bez ingerencji czlowieka
+- dynamizacja = aplikacja pobiera wyniki swojej pracy i dazy do wypracowania najlepszych materialow
+- statytyska = aplikacja pobiera informacje zwrotne od uzytkownikow mediow spolecznosciowych w celu okreslenia trendów
+- monetyzacja = dzialmy w oparciu o pozyskanie klientow ktore podepniemy do progrmau zinizno, oraz za reklamy w zaleznosci od sukcesu kanalu spolecznosciowego
+- source-free = do uruchomienia aplikacji nie sa potrzebne zadne srodki finanoswe
+- edukacja = materialyzebrane ze statystyk maja posluzyc w przyszlosci do rozwoju programow opartych na sztucznej inteligencji
